@@ -1,4 +1,7 @@
-# GitHub Markdown
+# Markdown Syntaxes
+
+> [!NOTE]
+> There are Markdown specific and GitHub specific syntaxes!
 
 ## Table of contents
 
