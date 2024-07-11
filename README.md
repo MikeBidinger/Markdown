@@ -67,11 +67,13 @@ test.. test... test..... test?..... test!....
 
 **This is bold text**
 
-**This is bold text**
+<b>This is bold text</b>
+
+<strong>This is bold text</strong>
 
 _This is italic text_
 
-_This is italic text_
+<i>This is italic text</i>
 
 ~~Strikethrough~~
 
