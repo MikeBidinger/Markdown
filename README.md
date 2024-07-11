@@ -1,7 +1,11 @@
 # Markdown Syntaxes
 
-> [!NOTE]
+> [!WARNING]
 > There are Markdown specific and GitHub specific syntaxes!
+
+> [!NOTE]
+> Many thanks to https://markdown-it.github.io/, while it was the foundation of 
+this documentation.
 
 ## Table of contents
 
