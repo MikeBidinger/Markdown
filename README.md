@@ -4,8 +4,8 @@
 > There are Markdown specific and GitHub specific syntaxes!
 
 > [!NOTE]
-> Many thanks to https://markdown-it.github.io/, while it was the foundation of 
-this documentation.
+> Many thanks to <a href="https://markdown-it.github.io/">markdown-it</a>, 
+while it provided the foundation of this documentation.
 
 ## Table of contents
 
