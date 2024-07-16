@@ -205,6 +205,9 @@ go to [Tables](#tables)
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
+
+Labeled image:
+
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 Like links, Images also have a footnote style syntax
@@ -214,6 +217,19 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
+
+The following image is sized, centered and linked:
+
+<p align="center">
+    <a href="https://octodex.github.com/">
+        <img
+            src="https://octodex.github.com/images/boxertocat_octodex.jpg"
+            alt="DIKW-pyramid"
+            width="300"
+        />
+    </a>
+</p>
+
 
 ## Plugins
 
