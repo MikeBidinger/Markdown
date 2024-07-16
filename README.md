@@ -221,7 +221,7 @@ With a reference later in the document defining the URL location:
 The following image is sized, centered and linked:
 
 <p align="center">
-    <a href="https://octodex.github.com/">
+    <a href="https://octodex.github.com/" target="_blank">
         <img
             src="https://octodex.github.com/images/boxertocat_octodex.jpg"
             alt="DIKW-pyramid"
