@@ -1,4 +1,4 @@
-"""
+""" Description:
 Automated Markdown index creation including Bookmarks.
 A Markdown file can be selected with the Filedialog.
 An output file will be created with the Markdown index.
@@ -11,14 +11,22 @@ TAB_SIZE = 4
 
 
 def main():
+    # Select a Markdown file
     file_path = file_selection_dialog()
+    # If no file is selected, quit the script
     if file_path == "":
         quit()
+    # Read all the lines from the file
     file_lines = read_file_lines(file_path)
+    # Get all headings (lines starting with #)
     file_headings = get_file_headings(file_lines)
+    # Create the Markdown index
     file_index = create_file_index(file_headings)
+    # Get the source path
     source_path = file_path.rsplit("/", 1)[0]
+    # Write the Markdown index to the destination path
     destination_path = write_index("index.md", file_index)
+    # Print info
     print(f"Index of selected Markdown file: '{file_path}'")
     print(f"is successfully written to:      '{source_path}/{destination_path}'")
 
