@@ -17,6 +17,7 @@ while it provided the foundation of this documentation.
 -   [Lists](#lists)
 -   [Code](#code)
 -   [Tables](#tables)
+-   [Collapsible section](#collapsible-section)
 -   [Links](#links)
 -   [Bookmarks](#bookmarks)
 -   [Images](#images)
@@ -43,6 +44,24 @@ while it provided the foundation of this documentation.
 
 ###### Heading h6
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+# Heading h1
+
+## Heading h2
+
+### Heading h3
+
+#### Heading h4
+
+##### Heading h5
+
+###### Heading h6
+```
+</details>
+
 ## Horizontal Rules
 
 ---
@@ -50,6 +69,18 @@ while it provided the foundation of this documentation.
 ---
 
 ---
+
+<details>
+    <summary>Raw view</summary>
+    
+```
+---
+
+---
+
+---
+```
+</details>
 
 ## Typographic replacements
 
@@ -71,11 +102,33 @@ test.. test... test..... test?..... test!....
 
 <strong>This is bold text</strong>
 
+*This is italic text*
+
 _This is italic text_
 
 <i>This is italic text</i>
 
 ~~Strikethrough~~
+
+<details>
+    <summary>Raw view</summary>
+    
+```
+**This is bold text**
+
+<b>This is bold text</b>
+
+<strong>This is bold text</strong>
+
+*This is italic text*
+
+_This is italic text_
+
+<i>This is italic text</i>
+
+~~Strikethrough~~
+```
+</details>
 
 ## Blockquotes
 
@@ -84,6 +137,18 @@ _This is italic text_
 > > ...by using additional greater-than signs right next to each other...
 > >
 > > > ...or with spaces between arrows.
+
+<details>
+    <summary>Raw view</summary>
+    
+```
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+```
+</details>
 
 ## Lists
 
@@ -97,6 +162,20 @@ Unordered
         -   Nulla volutpat aliquam velit
 -   Very easy!
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+-   Create a list by starting a line with `+`, `-`, or `*`
+-   Sub-lists are made by indenting 2 spaces:
+    -   Marker character change forces new list start:
+        -   Ac tristique libero volutpat at
+        *   Facilisis in pretium nisl aliquet
+        -   Nulla volutpat aliquam velit
+-   Very easy!
+```
+</details>
+
 Ordered
 
 1. Lorem ipsum dolor sit amet
@@ -106,15 +185,46 @@ Ordered
 4. You can use sequential numbers...
 5. ...or keep all the numbers as `1.`
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
+```
+</details>
+
 Start numbering with offset:
 
 57. foo
 1. bar
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+57. foo
+1. bar
+```
+</details>
+
 Checkboxes
 
 -   [ ] not completed
 -   [x] completed
+
+<details>
+    <summary>Raw view</summary>
+    
+```
+-   [ ] not completed
+-   [x] completed
+```
+</details>
 
 ## Code
 
@@ -185,6 +295,33 @@ Nested tables
 | value_53 | Value_63 |
 
 </td></tr></table>
+
+## Collapsible section
+
+<details>
+  <summary>Click me</summary>
+  
+  ### Heading
+  1. Foo
+  2. Bar
+     * Baz
+     * Qux
+
+  ### Some Javascript
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
+
+<details>
+    <summary>Raw view</summary>
+    
+```python
+print("Hello World!")
+```
+</details>
 
 ## Links
 
