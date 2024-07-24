@@ -318,8 +318,11 @@ Nested tables
 <details>
     <summary>Raw view</summary>
     
-```python
-print("Hello World!")
+```
+<details>
+    <summary>Click me</summary>
+        print("Hello World!")
+</details>
 ```
 </details>
 
