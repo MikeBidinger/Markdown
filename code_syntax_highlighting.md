@@ -6,6 +6,14 @@ conda create --name [ENV_NAME] python=3.11
 conda create --name [ENV_NAME] python=3.11
 ```
 
+```conda
+conda create --name [ENV_NAME] python=3.11
+```
+
+```anaconda
+conda create --name [ENV_NAME] python=3.11
+```
+
 ```shell
 conda create --name [ENV_NAME] python=3.11
 ```
