@@ -292,6 +292,18 @@ Syntax highlighting
 | engine | engine to be used for processing templates. Handlebars is the default.    |
 | ext    | extension to be used for dest files.                                      |
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+```
+</details>
+
 Right aligned columns
 
 | Option |                                                               Description |
@@ -299,6 +311,18 @@ Right aligned columns
 |   data | path to data files to supply the data that will be passed into templates. |
 | engine |    engine to be used for processing templates. Handlebars is the default. |
 |    ext |                                      extension to be used for dest files. |
+
+<details>
+    <summary>Raw view</summary>
+    
+```
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+```
+</details>
 
 Nested tables
 
@@ -326,6 +350,42 @@ Nested tables
 | value_53 | Value_63 |
 
 </td></tr></table>
+
+<details>
+    <summary>Raw view</summary>
+
+```
+<table>
+    <tr>
+        <th>First Table</th>
+        <th>Second Table</th>
+        <th>Last Table</th>
+    </tr>
+    <tr>
+        <td>
+            | Field_A  |
+            | -------- |
+            | value_11 |
+            | value_12 |
+            | value_13 |
+        </td>
+        <td>
+            | Field_B  | Field_C  | Field_D  |
+            | -------- | -------- | -------- |
+            | value_21 | Value_31 | Value_41 |
+            | value_22 | Value_32 | Value_42 |
+        </td>
+        <td>
+            | Field_E  | Field_F  |
+            | -------- | -------- |
+            | value_51 | Value_61 |
+            | value_52 | Value_62 |
+            | value_53 | Value_63 |
+        </td>
+    </tr>
+</table>
+```
+</details>
 
 ## Collapsible section
 
