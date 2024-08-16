@@ -22,6 +22,7 @@ while it provided the foundation of this documentation.
 -   [Bookmarks](#bookmarks)
 -   [Images](#images)
 -   [Plugins](#plugins)
+-   [Arrows](#Arrows)
 -   [Emojies](#emojies)
 -   [Subscript / Superscript](#subscript--superscript)
 -   [\<ins>](#ins)
@@ -466,6 +467,16 @@ The following image is sized, centered and linked:
 
 The killer feature of `markdown-it` is very effective support of
 [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+### Arrows
+
+| Arrow  | Direction | Code     |
+| ------ | --------- | -------- |
+| &uarr; | Up        | `&uarr;` |
+| &darr; | Down      | `&darr;` |
+| &larr; | Left      | `&larr;` |
+| &rarr; | Right     | `&rarr;` |
+| &harr; | Double    | `&harr;` |
 
 ### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 
