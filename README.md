@@ -531,32 +531,52 @@ _here be dragons_
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
 <details>
     <summary>Raw view</summary>
 
     > [!NOTE]
     > Useful information that users should know, even when skimming content.
 
+</details>
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+<details>
+    <summary>Raw view</summary>
+
     > [!TIP]
     > Helpful advice for doing things better or more easily.
+
+</details>
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+<details>
+    <summary>Raw view</summary>
 
     > [!IMPORTANT]
     > Key information users need to know to achieve their goal.
 
+</details>
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+<details>
+    <summary>Raw view</summary>
+
     > [!WARNING]
     > Urgent info that needs immediate user attention to avoid problems.
+
+</details>
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+<details>
+    <summary>Raw view</summary>
 
     > [!CAUTION]
     > Advises about risks or negative outcomes of certain actions.
