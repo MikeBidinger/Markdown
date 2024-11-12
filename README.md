@@ -424,6 +424,16 @@ Nested tables
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
+<details>
+    <summary>Raw view</summary>
+    
+```
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+```
+</details>
+
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Bookmarks
