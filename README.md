@@ -305,23 +305,23 @@ Syntax highlighting
 ```
 </details>
 
-Right aligned columns
+Column alignment
 
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
+| Left   |                                  Center                                   | Right |
+| :----- | :-----------------------------------------------------------------------: | ----: |
+| data   | path to data files to supply the data that will be passed into templates. |   100 |
+| engine |  engine to be used for processing templates. Handlebars is the default.   |   120 |
+| ext    |                   extension to be used for dest files.                    |   123 |
 
 <details>
     <summary>Raw view</summary>
     
 ```
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
+| Left   |                                  Center                                   | Right |
+| :----- | :-----------------------------------------------------------------------: | ----: |
+| data   | path to data files to supply the data that will be passed into templates. |   100 |
+| engine |  engine to be used for processing templates. Handlebars is the default.   |   120 |
+| ext    |                   extension to be used for dest files.                    |   123 |
 ```
 </details>
 
