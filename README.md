@@ -67,7 +67,7 @@ while it provided the foundation of this documentation.
 
 ---
 
----
+***
 
 ---
 
@@ -77,7 +77,7 @@ while it provided the foundation of this documentation.
 ```
 ---
 
----
+***
 
 ---
 ```
