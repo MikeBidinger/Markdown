@@ -1,34 +1,35 @@
-""" Description:
-Automated Markdown index creation including Bookmarks.
-A Markdown file can be selected with the Filedialog.
-An output file will be created with the Markdown index.
+"""
+Description:
+
+Automated Markdown index creation including Bookmark-links.
+The source file name is required to be given (`FILE_NAME`).
+A given output file will be created with the Markdown index.
 """
 
-import tkinter as tk
-from tkinter import filedialog
+import os
 
-TAB_SIZE = 4
+FILE_NAME: str = "playbook.md"
+TAB_SIZE: int = 4
+DESTINATION_FILE_NAME: str = "index.md"
+
+DIR_PATH: str = os.path.dirname(os.path.realpath(__file__))
+PARENT_PATH: str = os.path.abspath(os.path.join(DIR_PATH, os.pardir))
+FILE_PATH: str = os.path.join(PARENT_PATH, FILE_NAME)
+DESTINATION_PATH: str = os.path.join(DIR_PATH, DESTINATION_FILE_NAME)
 
 
-def main():
-    # Select a Markdown file
-    file_path = file_selection_dialog()
-    # If no file is selected, quit the script
-    if file_path == "":
-        quit()
+def main() -> None:
     # Read all the lines from the file
-    file_lines = read_file_lines(file_path)
+    file_lines: list[str] = read_file_lines(FILE_PATH)
     # Get all headings (lines starting with #)
-    file_headings = get_file_headings(file_lines)
+    file_headings: list[str] = get_file_headings(file_lines)
     # Create the Markdown index
-    file_index = create_file_index(file_headings)
-    # Get the source path
-    source_path = file_path.rsplit("/", 1)[0]
+    file_index: str = create_file_index(file_headings)
     # Write the Markdown index to the destination path
-    destination_path = write_index("index.md", file_index)
+    destination_file: str = write_index(DESTINATION_PATH, file_index)
     # Print info
-    print(f"Index of selected Markdown file: '{file_path}'")
-    print(f"is successfully written to:      '{source_path}/{destination_path}'")
+    print(f"Index of selected Markdown file: '{FILE_PATH}'")
+    print(f"is successfully written to:      '{DIR_PATH}/{destination_file}'")
 
 
 def write_index(file_path: str, index: str) -> str:
@@ -38,7 +39,9 @@ def write_index(file_path: str, index: str) -> str:
 
 
 def set_line(line: str) -> str:
-    bookmark = ""
+    bookmark: str = ""
+    if line.startswith("["):
+        line = line[1:].rsplit("]", 1)[0]
     for char in line:
         if char.isalnum():
             bookmark += char.lower()
@@ -54,7 +57,9 @@ def set_prefix(prefix: str) -> str:
 
 
 def create_file_index(headings: list[str]) -> str:
-    index = ""
+    index: str = ""
+    prefix: str = ""
+    line: str = ""
     for heading in headings:
         prefix, line = heading.split(" ", 1)
         prefix = set_prefix(prefix)
@@ -64,33 +69,21 @@ def create_file_index(headings: list[str]) -> str:
 
 
 def get_file_headings(lines: list[str]) -> list[str]:
-    headings = []
+    headings: list = []
     for line in lines:
         if line.startswith("#"):
             headings.append(line)
+        elif line.startswith("-   #") or line.startswith("- #"):
+            headings.append(line.replace("-", "").strip())
     return headings
 
 
-def read_file_lines(file_path: str, encoding: str = None) -> list[str]:
-    data = []
-    with open(file_path, "r", encoding=encoding) as f:
+def read_file_lines(file_path: str) -> list[str]:
+    data: list = []
+    with open(file_path, "r") as f:
         for x in f:
             data.append(x.replace("\n", ""))
     return data
-
-
-def file_selection_dialog(initial_dir: str = "") -> str:
-    root = tk.Tk()
-    root.wm_attributes("-topmost", 1)
-    root.withdraw()
-    file_path = filedialog.askopenfilename(
-        filetypes=[("Markdown Files", "*.md")],
-        initialdir=initial_dir,
-        title="Select a Markdown file",
-        parent=root,
-    )
-    root.destroy()
-    return file_path
 
 
 if __name__ == "__main__":
